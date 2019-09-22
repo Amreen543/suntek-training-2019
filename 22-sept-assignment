@@ -1,0 +1,175 @@
+1.#include<stdio.h>
+int cou(int* a,int count,int n);
+int main()
+{
+int a[50],n,i,count;
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+}
+scanf("%d",&count);
+printf("%d",cou(a,count,n));
+return 0;
+}
+int cou(int* a,int count,int n)
+{
+int i,temp=0;
+for(i=0;i<n;i++)
+{
+if(count==a[i])
+temp++;
+}
+if(temp==0)
+return -1;
+return temp;
+}
+_________________________________________________________________________________________
+2.
+#include<stdio.h>
+int cou(int* a,int n);
+int main()
+{
+int a[100];
+int n,i;
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+}
+count(a,n);
+return 0;
+}
+int cou(int* a,int n)
+{
+int i,i,k,flag,temp;
+for(i=0;i<n;i++)
+{
+flag=0;
+for(j=i+1;j<n;j++)
+{
+if(a[i]==a[j])
+{
+flag++;
+a[j]=temp;
+}
+}
+if(a[i]!=temp)
+{
+
+printf("%d is repeated %d times\n",a[i],flag+1);
+}
+}
+}
+_____________________________________________________________________________________________________________
+3.
+#include<stdio.h>
+struct student{
+char name[20];
+int rollno;
+{;
+struct student s[10];
+int main()
+{
+int i,n;
+printf("enter no of students");
+scanf("%d",&n);
+printf("enter the details");
+for(i=0;i<n;i++)
+{
+printf("\n");
+scanf("%s";s[i].name);
+scanf("%s",&s[i].rollno);
+}
+printf("enter the details of the students");
+for(i=0;i<n;i++)
+{
+printf("/n");
+printf("name %s,s[i].name);
+printf("rollno %s,&s[i].rollno);
+}
+return 0;
+}
+_____________________________________________________________________________________________________________________
+4.
+#include<stdio.h>
+int rev(int n);
+int main()
+{
+int n,c;
+printf("enten n");
+scanf("%d",&n);
+c=rev;
+printf("%d",c);
+return 0;
+}
+int rev(int n)
+{
+int temp;
+temp=0;
+wnhile(n!=0)
+{
+r=n%10;
+n=n/10;
+temp=temp*10+r;
+}
+return temp;
+}
+___________________________________________________________________________________________________________________________
+5.
+#include<stdio.h>
+char mystr(char* str,char* sub)
+{
+int i,j,l;
+for(i=0,j=0;str[i]!='\0' && sub[j]!='\0'+++++++;i++)
+{
+if(str[i] == sub[j])
+{
+j++;
+}
+else
+{
+j=0;
+}
+}
+if(j==1)
+{
+printf("substring %s found in string %s",sub ,str);
+}
+else
+{
+printf("substring %s notfound in string %s",sub ,str);
+}
+}
+int main()
+{
+char str[100],sub[100];
+printf("enter first string:");
+gets(str);
+printf("enter second string:");
+gets(sub);
+mystr(str,sub);
+return 0;
+}
+_________________________________________________________________________________________________
+9.
+#include<stdio.h>
+int mul(int n);
+{
+int i,c;
+for(i=1;i<10;i++)
+{
+c=n*i;
+printf("\n%d*%%d",n,i,c);
+}
+}
+int main()
+{
+int n;
+printf("enter n value");
+scanf("%d",&n);
+mul(n);
+return 0;
+}
+_________________________________________________________________________________________________________________________
+
